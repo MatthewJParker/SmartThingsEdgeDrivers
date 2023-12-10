@@ -1,0 +1,1 @@
+https://enphase.com/download/iq-gateway-access-using-local-apis-or-local-ui-token-based-authentication-tech-brief#:~:text=NOTE%3A%20Tokens%20are%20valid%20for%20a%20finite%20time.&text=If%20the%20user%20is%20a,is%20valid%20for%201%20year.&text=If%20the%20user%20is%20an,is%20valid%20for%2012%20hours.
