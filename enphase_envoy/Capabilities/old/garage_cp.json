@@ -1,0 +1,173 @@
+{
+  "dashboard": {
+    "states": [
+      {
+        "label": "{{door.value}}",
+        "alternatives": [
+          {
+            "key": "closed",
+            "value": "Closed",
+            "type": "inactive"
+          },
+          {
+            "key": "open",
+            "value": "Open",
+            "type": "active"
+          },
+          {
+            "key": "opening",
+            "value": "Opening",
+            "type": "active"
+          },
+          {
+            "key": "closing",
+            "value": "Closing",
+            "type": "active"
+          },
+          {
+            "key": "partial",
+            "value": "Partially open",
+            "type": "active"
+          },
+          {
+            "key": "jammed",
+            "value": "Jammed or unresponsive",
+            "type": "active"
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "displayType": "toggleSwitch",
+        "toggleSwitch": {
+          "command": {
+            "name": "setDoor",
+            "on": "open",
+            "off": "closed",
+            "argumentType": "string"
+          },
+          "state": {
+            "value": "door.value",
+            "on": "open",
+            "off": "closed",
+            "valueType": "string"
+          }
+        }
+      }
+    ],
+    "basicPlus": []
+  },
+  "detailView": [
+    {
+      "label": "Garage Door Status",
+      "displayType": "list",
+      "list": {
+        "command": {
+          "name": "setDoor",
+          "alternatives": [
+            {
+              "key": "closed",
+              "value": "Closed",
+              "type": "inactive"
+            },
+            {
+              "key": "open",
+              "value": "Open",
+              "type": "active"
+            }
+          ],
+          "argumentType": "string"
+        },
+        "state": {
+          "value": "door.value",
+          "valueType": "string",
+          "alternatives": [
+            {
+              "key": "closed",
+              "value": "Closed",
+              "type": "inactive"
+            },
+            {
+              "key": "open",
+              "value": "Open",
+              "type": "active"
+            },
+            {
+              "key": "opening",
+              "value": "Opening...",
+              "type": "active"
+            },
+            {
+              "key": "closing",
+              "value": "Closing...",
+              "type": "active"
+            },
+            {
+              "key": "partial",
+              "value": "Partially open",
+              "type": "active"
+            },
+            {
+              "key": "jammed",
+              "value": "Jammed or unresponsive",
+              "type": "active"
+            }
+          ]
+        }
+      },
+      "state": null
+    }
+  ],
+  "automation": {
+    "conditions": [
+      {
+        "label": "Garage Door Status",
+        "displayType": "list",
+        "list": {
+          "alternatives": [
+            {
+              "key": "closed",
+              "value": "Closed",
+              "type": "inactive"
+            },
+            {
+              "key": "open",
+              "value": "Open",
+              "type": "active"
+            },
+            {
+              "key": "partial",
+              "value": "Jammed or unresponsive",
+              "type": "active"
+            }
+          ],
+          "value": "door.value",
+          "valueType": "string"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "label": "Garage Door",
+        "displayType": "list",
+        "list": {
+          "alternatives": [
+            {
+              "key": "closed",
+              "value": "Closed",
+              "type": "inactive"
+            },
+            {
+              "key": "open",
+              "value": "Open",
+              "type": "active"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "id": "wanderdream36822.customGarageDoor",
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "name": "exportedEnergy",
+  "attributes": {
+    "exportedEnergy": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["value"]
+      },
+      "setter": "setExportedEnergy",
+      "enumCommands": []
+    }
+  },
+  "commands": {
+    "setExportedEnergy": {
+      "name": "setExportedEnergy",
+      "arguments": [
+        {
+          "name": "energy",
+          "optional": false,
+          "schema": {
+            "type": "number"
+          }
+        }
+      ]
+    }
+  }
+}

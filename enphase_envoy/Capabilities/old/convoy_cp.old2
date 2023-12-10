@@ -1,0 +1,85 @@
+{
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{importedenergy.value}} {{importedenergy.unit}}",
+                "alternatives": [
+                    {
+                        "key": "W",
+                        "value": "Watts",
+                        "type": "active"
+                    },
+                    {
+                        "key": "WH",
+                        "value": "Watt Hours",
+                        "type": "active"
+                    }
+                ]
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [
+        {
+            "label": "Imported Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    -20,
+                    50
+                ],
+                "unit": "importedenergy.unit",
+                "value": "importedenergy.value",
+                "valueType": "number",
+		"argument": 1
+            }
+        },
+	{
+            "label": "Exported Energy",
+            "displayType": "slider",
+            "slider": {
+                "range": [
+                    -20,
+                    50
+                ],
+                "unit": "exportedenergy.unit",
+                "value": "exportedenergy.value",
+                "valueType": "number",
+		"argument": 2
+            }
+        }
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "{{i18n.label}}",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "importedenergy.value",
+                    "valueType": "number",
+                    "unit": "importedenergy.unit",
+                    "range": [
+                        -20,
+                        50
+                    ]
+                }
+            },
+	    {
+                "label": "exportedenergy",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "exportedenergy.value",
+                    "valueType": "number",
+                    "unit": "exportedenergy.unit",
+                    "range": [
+                        -20,
+                        50
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    },
+    "id": "wanderdream36822.envoyEnphase",
+    "version": 1
+}

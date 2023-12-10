@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "states": [
+      {
+        "label": "{{importedenergy.value}}"
+      }
+    ],
+    "actions": []
+  },
+  "detailView": [
+    {
+      "label": "Imported Energy",
+      "displayType": "state",
+      "state": {
+        "value": "{{importedenergy.value}}",
+        "unit": "importedenergy.unit"
+      }
+    }
+  ],
+  "automation": {
+    "conditions": [
+      {
+        "label": "Imported Energy",
+        "displayType": "numberField",
+        "numberField": {
+          "value": "importedenergy.value",
+          "valueType": "number",
+	  "unit": "power.unit"
+        }
+      }
+    ],
+    "actions": []
+  },
+  "id": "wanderdream36822.envoy",
+  "version": 1
+}

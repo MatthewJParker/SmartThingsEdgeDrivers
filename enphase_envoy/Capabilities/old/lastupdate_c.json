@@ -1,0 +1,37 @@
+{
+    "status": "proposed",
+    "name": "Last Update",
+    "ephemeral": false,
+    "attributes": {
+        "lastupdate": {
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "setter": "setLastupdate",
+            "enumCommands": []
+        }
+    },
+    "commands": {
+        "setLastupdate": {
+            "name": "setLastupdate",
+            "arguments": [
+                {
+                    "name": "value",
+                    "optional": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        }
+    }
+}

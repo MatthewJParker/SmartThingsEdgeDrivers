@@ -1,0 +1,46 @@
+{
+  "name": "Custom Garage Door",
+  "attributes": {
+    "door": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "enum": [
+              "open",
+              "opening",
+              "closed",
+              "closing",
+              "partial"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "value"
+        ]
+      },
+      "setter": "setDoor",
+      "enumCommands": []
+    }
+  },
+  "commands": {
+    "setDoor": {
+      "name": "setDoor",
+      "arguments": [
+        {
+          "name": "door",
+          "optional": false,
+          "schema": {
+            "type": "string",
+            "enum": [
+              "open",
+              "closed"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

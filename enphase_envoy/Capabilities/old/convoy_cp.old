@@ -1,0 +1,33 @@
+{
+  "detailView": [
+    {
+      "label": "Export Energy",
+      "displayType": "numberField",
+      "numberField": {
+         "command": {
+	   "name": "Setimportedenergy",
+           "argumentType": "numberField"
+         },
+         "state": {
+           "value": "importedenergy.value",
+           "valueType": "numberField"
+       }
+      } 
+    }
+  ],
+  "automation": {
+    "conditions": [
+      {
+        "label": "Export Energy",
+        "displayType": "numberField",
+	"numberField": {
+          "value": "importedenergy.value",
+          "valueType": "numberField",
+	  "unit": "importedenergy.unit"
+        }
+      }
+    ]
+  },
+  "id": "wanderdream36822.envoy",
+  "version": 1
+}
