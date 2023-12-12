@@ -6,7 +6,7 @@ Reads the current solar generation, battery generation, and grid consumption
 - SmartThings account
 - SmartThings mobile app
 - Enphase IQ Gateway Solar and/or Batteries
-- Optional: EdgeBridge ([By Taustin](https://github.com/toddaustin07/edgebridge) to register token
+- Optional: EdgeBridge [By Taustin](https://github.com/toddaustin07/edgebridge) to register token
 ## Installation Steps
 Use my shared projects Edge channel to complete these steps:
 1. Enroll hub in my shared test driver Edge channel:  https://bestow-regional.api.smartthings.com/invite/Q1jP7BqnNNlL
