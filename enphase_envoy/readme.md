@@ -19,28 +19,26 @@ Once the driver is installed to your hub, use the "Add device" from your mobile 
 This driver shows the current Battery Charge, and exported, imported, produced, consumed, and charged energy.
 A calculation is used to generate an artificial mode no based on the follow criteria, to help with rules:
 
-#### If producing denergy and exporting energy and not discharging denergy
+#### If producing energy and exporting energy and not discharging energy
 * 10: "Producing/Exporting"
-#### If producing energy and not charging energy and not importing energy and not discharging energy
-* 9: "Producing"
 #### If producing energy and charging energy
-* 8: "Producing/Charging"
+* 9: "Producing/Charging"
 #### If producing energy and not charging energy and not importing energy and not discharging energy
-* 7: "Producing"
+* 8: "Producing"
 #### If producing energy and discharging energy and not importing energy
-* 6: "Producing/Discharging"
+* 7: "Producing/Discharging"
 #### If not producing energy and discharging energy and not importing energy
-* 5: "Discharging"
+* 6: "Discharging"
 #### If producing energy and discharging energy and importing energy
-* 4: "Producing/Discharging/Importing"
+* 5: "Producing/Discharging/Importing"
 #### If producing energy and not discharging energy and importing energy
-* 3: "Producing/Importing"
+* 4: "Producing/Importing"
 #### If not producing energy and discharging energy and importing energy
-* 2: "Discharging/Importing"
+* 3: "Discharging/Importing"
 #### If not producing energy and not discharging energy and importing energy
-* 1: "Importing"
+* 2: "Importing"
 #### If discharging energy and exporting energy then
-* 0: "Discharging/Exporting"
+* 1: "Discharging/Exporting"
 
 
 ### Documentation on the enphase local API
