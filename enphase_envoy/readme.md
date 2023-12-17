@@ -5,7 +5,7 @@ Reads the current solar generation, battery generation, and grid consumption
 - SmartThings hub capable of running Edge platform
 - SmartThings account
 - SmartThings mobile app
-- Enphase IQ Gateway Solar and/or Batteries
+- Enphase IQ Gateway Solar and/or Batteries (Not tested without Batteries)
 - Optional: EdgeBridge [By Taustin](https://github.com/toddaustin07/edgebridge) to register token
 ## Installation Steps
 Use my shared projects Edge channel to complete these steps:
@@ -37,7 +37,7 @@ A calculation is used to generate an artificial mode no based on the follow crit
 * 3: "Discharging/Importing"
 #### If not producing energy and not discharging energy and importing energy
 * 2: "Importing"
-#### If discharging energy and exporting energy then
+#### If discharging energy and exporting energy
 * 1: "Discharging/Exporting"
 
 
