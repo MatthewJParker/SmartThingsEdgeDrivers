@@ -14,7 +14,7 @@ Use my shared projects Edge channel to complete these steps:
 2. Choose to install driver 'Enphase_envoy'
 3. Once the driver is installed to your hub, use the "Add device" from your mobile app. Scan for nearby devices on the hub the driver is installed
 4. Ensure you have EdgeBridge installed to be able to get a token from enphase web site
-5. Change settings to point to your IQ Gateway
+5. Change settings to point to your IQ Gateway, obtain the IP by command "ping envoy.local"
 6. Change settings to point to your EdgeBridge server
 7. Enter the serial number of your IQ Gateway by logining into [Enlighten Manager](https://enlighten.enphaseenergy.com/)
 8. THe serial number is seen when selecting "Full System" pull down
