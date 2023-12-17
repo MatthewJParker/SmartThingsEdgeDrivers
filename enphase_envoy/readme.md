@@ -19,28 +19,28 @@ Once the driver is installed to your hub, use the "Add device" from your mobile 
 This driver shows the current Battery Charge, and exported, imported, produced, consumed, and charged energy.
 A calculation is used to generate an artificial mode no based on the follow criteria, to help with rules:
 
-####If producing denergy and exporting energy and not discharging denergy
+#### If producing denergy and exporting energy and not discharging denergy
 * 10: "Producing/Exporting"
-####If producing energy and not charging energy and not importing energy and not discharging energy
+#### If producing energy and not charging energy and not importing energy and not discharging energy
 * 9: "Producing"
-####If producing energy and charging energy
+#### If producing energy and charging energy
 * 8: "Producing/Charging"
-####If producing energy and not charging energy and not importing energy and not discharging energy
+#### If producing energy and not charging energy and not importing energy and not discharging energy
 * 7: "Producing"
-####If producing energy and discharging energy and not importing energy
+#### If producing energy and discharging energy and not importing energy
 * 6: "Producing/Discharging"
-####If not producing energy and discharging energy and not importing energy
+#### If not producing energy and discharging energy and not importing energy
 * 5: "Discharging"
-####If producing energy and discharging energy and importing energy
+#### If producing energy and discharging energy and importing energy
 * 4: "Producing/Discharging/Importing"
-####If producing energy and not discharging energy and importing energy
+#### If producing energy and not discharging energy and importing energy
 * 3: "Producing/Importing"
-####If not producing energy and discharging energy and importing energy
+#### If not producing energy and discharging energy and importing energy
 * 2: "Discharging/Importing"
-####If not producing energy and not discharging energy and importing energy
+#### If not producing energy and not discharging energy and importing energy
 * 1: "Importing"
-####If discharging energy and exporting energy then
-* 1: "Discharging/Exporting"
+#### If discharging energy and exporting energy then
+* 0: "Discharging/Exporting"
 
 
 ### Documentation on the enphase local API
