@@ -11,6 +11,17 @@ Reads the current solar generation, battery generation, and grid consumption
 Use my shared projects Edge channel to complete these steps:
 1. Enroll hub in my shared test driver Edge channel:  ?
 2. Choose to install driver 'Enphase_envoy'
+3. Ensure you have EdgeBridge installed to be able to get a token from enphase web site
+4. Change settings to point to your IQ Gateway
+5. Change settings to point to your EdgeBridge server
+6. Enter the serial number of your IQ Gateway by logining into [Enlighten Manager](https://enlighten.enphaseenergy.com/)
+7. THe serial number is seen when selecting "Full System" pull down
+#### Note: The IQ Gateway is accessed using a token key, so the intial authentication is performed over the enphase web portal. Once a Token Key is created it is a local access.
+### Token Key Alternative
+Because of the added complexity of maintaining an EdgeBridge I have created an alternative option to setup your key in the settings. This is split into two parts because the limitation of 255 chars for each text setting. If you leave this blank the default is to use the EdgeeBridge server approach. One thing to note is the key you get from enphase you need to follow these steps:
+- Login with your enphase login to the [Enphase Token Generator](https://entrez.enphaseenergy.com/) to generate a token
+- Split the token into two parts
+- Paste first half into parameter "Token First Part (Max 255 chars)" and second half into parameter "Token Second Part (Max 255 chars)"
 
 ### Enphase device discovery and SmartThings device creation
 Once the driver is installed to your hub, use the "Add device" from your mobile app. Scan for nearby devices.
